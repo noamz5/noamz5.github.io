@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Permits Archiver</title>
+  <meta name="description" content="A private bot that archives photos and documents from one Telegram group to Google Drive.">
+  <style>
+    :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --accent: #1a73e8; --line: #e3e3e3; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16181c; --fg: #e8eaed; --muted: #9aa0a6; --accent: #8ab4f8; --line: #2e3136; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+    .lead { color: var(--muted); margin: 0 0 24px; }
+    a { color: var(--accent); }
+    ol, ul { padding-left: 1.3em; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Permits Archiver</h1>
+  <p class="lead">A private bot that keeps a tidy Google Drive copy of the delivery permits shared in one Telegram group.</p>
+
+  <h2>What it does</h2>
+  <ol>
+    <li>The bot is a member of a single Telegram group.</li>
+    <li>When someone posts a <strong>photo</strong> or a <strong>document</strong> (such as a PDF permit), the bot saves a copy to a
+      Google Drive folder belonging to the group's operator.</li>
+    <li>Files are sorted into monthly folders and named after the date, the sender, and the caption, so they are easy to find.</li>
+  </ol>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not store text messages, voice notes, or videos.</li>
+    <li>It does not read any other chats, and it does not read other files in the operator's Google Drive.
+      It can only see the files and folders it created itself.</li>
+    <li>It is not a public service: it is not offered to anyone else, and there is nothing to sign up for.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">privacy policy</a> for exactly what is stored, where, and how to have something removed.</p>
+
+  <footer>Permits Archiver &middot; <a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
